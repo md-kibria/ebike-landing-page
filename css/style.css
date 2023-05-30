@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #ff4d77
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #7c7c7c;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #5a5a5a;
+    z-index: -5;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    z-index: 10;
+}
+
+nav .main {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .main .logo {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+nav .main .links {
+    display: flex;
+}
+
+nav .main .menu-btn {
+    display: none;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+nav .main .links li a {
+    padding: 10px;
+    font-size: 20px;
+    color: #D6D6D6;
+    transition: .4s;
+}
+
+nav .main .links li a:hover {
+    color: white;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* 1120 */
+main section {
+    height: 100%;
+    width: 100%;
+    /* max-width: 560px; */
+    max-width: 600px;
+    position: relative;
+}
+
+main section.desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .desc .text {
+    margin-top: -75px;
+}
+
+main .desc .text .main-title {
+    font-size: 87px;
+    line-height: 90px;
+}
+
+main .desc .text .main-title span {
+    color: #F74D76;
+    font-size: 50px;
+}
+
+main .desc .text .sub-title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 22px;
+    margin-bottom: 37px;
+}
+
+main .desc .text p span {
+    color: #D6D6D6;
+}
+
+main .desc .text .btns a {
+    font-size: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+main .desc .text .btns a:first-child {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+}
+
+main .desc .text .btns a:first-child:hover {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+main .desc .text .btns a:hover {
+    color: white;
+}
+
+main .desc .bike {
+    height: 320px;
+    position: absolute;
+    bottom: 0px;
+    left: -450px;
+    z-index: -1;
+}
+
+main .desc .red-ellipse {
+    /* height: 1000px; */
+    position: absolute;
+    bottom: -600px;
+    left: -700px;
+    z-index: -2;
+}
+
+main .desc .brands {
+    position: absolute;
+    bottom: 75px;
+    right: 40px;
+}
+
+
+
+
+
+
+main .img .ratings {
+    background-color: var(--primary-color);
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    padding: 15px 30px;
+    border-radius: 10px;
+    z-index: 5;
+    /* transition: .4s; */
+}
+
+
+main .img .ratings .icons {
+    display: flex;
+    width: 100%;
+}
+
+main .img .ratings img {
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+}
+
+main .img .ratings p{
+    font-size: 20px;
+    line-height: 25px;
+    color: #d2d2d2;
+    margin-left: 2px;
+    margin-top: 7px;
+}
+
+main .img .ratings:hover {
+    /* height: 1000px; */
+    transform: translate(5px, 5px) !important;
+}
+
+main .img .bike {
+    transform: rotateY(180deg);
+    height: 500px;
+    position: absolute;
+    right: 75px;
+    bottom: 150px;
+    z-index: -6;
+}
+
+main .img .spefi {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .img .spefi .item {
+    transition: .25s;
+    cursor: default;
+}
+
+main .img .spefi .item:hover {
+    transform: scale(1.1);
+}
+
+main .img .spefi h3 {
+    font-size: 30px;
+    line-height: 38px;
+}
+
+main .img .spefi p {
+    font-size: 15px;
+    line-height: 19px;
+    color: #d6d6d6;
+}
+
+main .img .white-ellipse {
+    position: absolute;
+    top: -300px;
+    height: 1000px;
+    right: -800px;
+}
+
+
+
+.play {
+    height: 95px;
+    width: 95px;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #aaa;
+    /* transition: .3s; */
+}
+
+.play:hover {
+    box-shadow: 0px 0px 20px var(--primary-color);
+}
+
+.play:hover #pb path {
+    /* fill: var(--primary-color); */
+}
+
+.play .p {
+    color: red;
+}
+
+@media screen and (max-width: 1400px) {
+    nav .main {
+        max-width: 1100px;
+    }
+
+    /* Text Section */
+    main section {
+        max-width: 550px;
+    }
+
+    main .desc .text .main-title {
+        font-size: 77px;
+        line-height: 80px;
+    }
+    
+    main .desc .text .main-title span {
+        font-size: 40px;
+    }
+
+    main .desc .text .sub-title {
+        font-size: 18px;
+        line-height: 25px;
+        width: 90%;
+        margin-top: 12px;
+        margin-bottom: 35px;
+    }
+
+    main .desc .text .btns a {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    main .desc .bike {
+        height: 280px;
+        left: -350px;
+    }
+
+    
+    main .desc .brands {
+        height: 25px;
+        bottom: 65px;
+    }
+
+    /* Img Section */
+    main .img .ratings {
+        width: 150px;
+    }
+    
+    main .img .ratings img {
+        height: 22px;
+        width: 22px;
+    }
+    
+    main .img .ratings p{
+        font-size: 18px;
+    }
+
+
+    main .img .bike {
+        height: 450px;
+        right: 80px;
+        bottom: 150px;
+    }
+
+    main .img .spefi {
+        bottom: 50px;
+    }
+    
+    main .img .spefi h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    main .img .spefi p {
+        font-size: 15px;
+    }
+
+    main .img .white-ellipse {
+        top: -300px;
+        right: -600px;
+    }
+    
+    .play {
+        height: 85px;
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    /* Text Section */
+    main .desc .text .main-title {
+        font-size: 67px;
+        line-height: 80px;
+    }
+    
+    main .desc .bike {
+        height: 280px;
+        left: -300px;
+    }
+    
+
+    /* Img Section */
+    main .img .bike {
+        height: 400px;
+        right: 130px;
+        bottom: 150px;
+    }
+
+    main .img .spefi {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    nav .main {
+        max-width: 1000px;
+    }
+
+    /* Text Section */
+    main section {
+        max-width: 500px;
+    }
+
+    main .desc .brands {
+        bottom: 55px;
+    }
+
+    /* Img */
+    main .img .bike {
+        height: 450px;
+        right: 40px;
+    }
+
+    main .img .spefi {
+        bottom: 40px;
+        left: 30px;
+        right: 10px;
+    }
+    
+    main .img .spefi h3 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+    
+    main .img .spefi p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    nav .main {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    /* Text Section */
+    main section {
+        padding: 0 50px;
+    }
+
+    main .img .ratings {
+        right: 50px;
+    }
+
+    main .img .spefi {
+        left: 5px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    nav {
+        background-color: #333;
+    }
+
+    nav .main {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    nav .main .links {
+        position: absolute;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        top: 100px;
+        right: 150px;
+        padding: 20px;
+        display: none;
+        transition: .5s;
+    }
+
+    nav .main .links.show {
+        display: flex;
+    }
+
+    nav .main .links li {
+        margin: 15px 0;
+    }
+    
+    nav .main .menu-btn {
+        display: block;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+
+    body::before {
+        content: none;
+    }
+
+    main {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    main section {
+        max-width: 100%;
+        padding: 0 150px;
+        box-sizing: border-box;
+    }
+
+    main .desc {
+        background-color: #333;
+        z-index: 5;
+    }
+
+    main .desc .bike {
+        left: -220px;
+        z-index: -1;
+    }
+
+    main .desc .brands {
+        bottom: 100px;
+        right: 150px;
+        height: 30px;
+    }
+
+    main .img .bike {
+        right: 150px;
+    }
+
+    main .img {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    main .img .ratings {
+        position: static;
+        margin-top: 20%;
+        margin-left: auto;
+    }
+
+    main .img .spefi {
+        width: 100%;
+        position: static;
+        margin-bottom: 40px;
+    }
+
+    .play {
+        top: 100%;
+        z-index: 9;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    nav .main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    nav .main .links {
+        right: 100px;
+    }
+
+    main section {
+        padding: 0 100px;
+    }
+
+    main .desc .text {
+        margin-top: -100px;
+    }
+
+    main .desc .brands {
+        right: 100px;
+    }
+
+    main .img .bike {
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    nav .main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    nav .main .links {
+        right: 50px;
+    }
+
+    main section {
+        padding: 0 50px;
+    }
+
+    main .desc .text {
+        margin-top: -150px;
+    }
+
+    main .desc .brands {
+        right: 50px;
+        bottom: 200px;
+    }
+
+    main .img .bike {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav .main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    nav .main .links {
+        right: 20px;
+    }
+
+    main section {
+        padding: 0 20px;
+    }
+
+    main .desc .brands {
+        right: 20px;
+        bottom: 200px;
+    }
+
+    main .img .bike {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    nav .main {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav .main .links {
+        right: 5px;
+    }
+
+    main section {
+        padding: 0 5px;
+    }
+
+    main .desc .brands {
+        right: 5px;
+        bottom: 200px;
+    }
+
+    main .img .bike {
+        right: 5px;
+    }
+}
+
